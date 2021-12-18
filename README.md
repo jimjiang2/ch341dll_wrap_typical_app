@@ -15,6 +15,6 @@ Test have done with python version :
 
 
 using guide:
-1. python_ch341_pychorm_pjs.zip this file contain hold projects . open it in pychram and run .....
+1. python_ch341_pychorm_pjs.zip this file contain the entire project files. open it in pychram and run .....
 
 enjoy it!
