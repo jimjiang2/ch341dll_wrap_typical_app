@@ -12,6 +12,7 @@ Test have done with python version :
 1. python 3.8 32bits windwows;
 2. pycharm 2021.2.1 (Community Edition) 
 3. Ch341dll from vender.
+![image](https://user-images.githubusercontent.com/7239489/146632690-f958d10f-42f2-4217-8711-72f35e222611.png)
 
 
 using guide:
