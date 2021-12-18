@@ -47,15 +47,15 @@ def write_mdio(phy_addr,reg_addr ,wdata, print_f=1):
         hd.ch341_set_output(0x0c, 0x8 + 0x20, 0x8 + mdio_o * 0x20);  # clk_rise
     # set all 0; 01, ;
 
-    # TA 2 cycles
-    for ii in range(1):
+    # TA 2 cycles --2 
+    for ii in range(2): ##1to 2
         hd.ch341_set_output(0x0c, 0x8 + 0x20*0 , 0x0  );  ##0xff is for 8bits output.
         hd.ch341_set_output(0x0c, 0x8 + 0x20*0 , 0x8  );  # clk_rise
     # set all 0; 01, ;
     # 16 read data 16 cycles
     get_v = 0x0;
     for ii in range(16):
-        mdio_o = ((wdata & 0xffff)  >> (16-ii)) & 0x1 ;
+        mdio_o = ((wdata & 0xffff)  >> (15-ii)) & 0x1 ; ## 15 is ok!
         hd.ch341_set_output(0x0c, 0x8 + 0x20, 0x20*mdio_o + 0x0  );  ##0xff is for 8bits output.
         hd.ch341_set_output(0x0c, 0x8 + 0x20, 0x20*mdio_o + 0x8  );  # clk_rise
     if(print_f > 0):
