@@ -19,3 +19,7 @@ using guide:
 1. python_ch341_pychorm_pjs.zip this file contain the entire project files. open it in pychram and run .....
 
 enjoy it!
+
+
+A vedio I made:
+https://www.bilibili.com/video/BV1aR4y1g7hp?spm_id_from=333.999.0.0
